@@ -83,11 +83,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.effective_user:
         register_user(update.effective_user.id)
 
-    message = (
-        "ð¬ Assalomu alaykum!\n\n"
-        "Botdan foydalanish uchun quyidagi 3 ta kanalga obuna bo'ling.\n"
-        "So'ng Â«â TasdiqlashÂ» tugmasini bosing."
-    )
+        message = (
+            "Assalomu alaykum!\n\n"
+            "Botdan foydalanish uchun quyidagi 3 ta kanalga obuna boling.\n"
+            "Song Tasdiqlash tugmasini bosing."
+        )
     await update.message.reply_text(message, reply_markup=subscription_keyboard())
 
 
